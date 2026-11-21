@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Tara Haveli — hotel rooms, restaurant and celebrations on Kotla Dhuri Main Road, Punjab. Send an enquiry for rooms, birthday parties and kitty parties.">
+  <title>Tara Haveli | Hotel, Restaurant & Celebrations</title>
+  <style>
+    :root{--ink:#29231f;--muted:#70665d;--cream:#faf6ef;--paper:#fffdf9;--gold:#b8894a;--dark:#38291f;--line:#e9dfd2}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+    a{color:inherit;text-decoration:none} .sans{font-family:Arial,Helvetica,sans-serif}
+    .topbar{background:var(--dark);color:#f7ead8;text-align:center;padding:9px 16px;font:12px Arial,sans-serif;letter-spacing:.08em}
+    header{position:sticky;top:0;z-index:5;background:rgba(255,253,249,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .nav{max-width:1120px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-size:25px;letter-spacing:.11em;font-weight:bold;color:var(--dark)}.brand small{display:block;font:9px Arial,sans-serif;letter-spacing:.28em;color:var(--gold);margin-top:3px}
+    .links{display:flex;gap:22px;align-items:center;font:13px Arial,sans-serif;color:#51463e}.links a:hover{color:var(--gold)}
+    .btn{display:inline-block;background:var(--gold);color:white;padding:13px 20px;border-radius:3px;font:13px Arial,sans-serif;letter-spacing:.04em;border:0;cursor:pointer}
+    .btn:hover{background:#946d39}.btn.outline{background:transparent;border:1px solid var(--gold);color:var(--dark)}
+    .hero{min-height:570px;display:grid;place-items:center;text-align:center;padding:90px 22px;color:white;background:linear-gradient(120deg,rgba(36,25,18,.82),rgba(36,25,18,.35)),linear-gradient(135deg,#796047,#c4a77e 48%,#4a382c)}
+    .hero-inner{max-width:780px}.eyebrow{font:11px Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:#f1d6a9}
+    h1{font-size:clamp(42px,7vw,76px);font-weight:normal;line-height:1.02;margin:20px 0}.hero p{font:16px/1.8 Arial,sans-serif;color:#f5eee5;max-width:620px;margin:0 auto 28px}
+    section{padding:78px 22px}.wrap{max-width:1100px;margin:auto}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}.section-head .eyebrow{color:var(--gold)}h2{font-size:clamp(30px,4vw,43px);font-weight:normal;margin:12px 0}.section-head p,.intro{font:15px/1.8 Arial,sans-serif;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--paper);border:1px solid var(--line)}.photo{height:220px;display:grid;place-items:center;text-align:center;padding:20px;color:#fff;background:linear-gradient(135deg,#8a6c50,#c6a77d);font:12px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}.photo.room{background:linear-gradient(135deg,#8b7564,#c8b49a)}.photo.food{background:linear-gradient(135deg,#66503b,#b78a57)}.photo.party{background:linear-gradient(135deg,#7a4e54,#d3a4a0)}
+    .card-body{padding:22px}.card h3{font-size:23px;font-weight:normal;margin:0 0 9px}.card p{font:14px/1.7 Arial,sans-serif;color:var(--muted);margin:0 0 16px}
+    .about{background:#f1e8dc}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.about-panel{min-height:320px;background:linear-gradient(145deg,#5a4332,#b38c5c);display:grid;place-items:center;color:#fff;text-align:center;padding:30px;font-size:24px}.about-copy p{font:15px/1.9 Arial,sans-serif;color:var(--muted)}
+    .booking{background:var(--dark);color:#fff}.booking .section-head p{color:#e1d5c7}.booking .eyebrow{color:#e5bd7e}
+    form{background:#fffdf9;color:var(--ink);padding:28px;max-width:760px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    label{display:block;font:12px Arial,sans-serif;color:#66594e;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;padding:13px;border:1px solid var(--line);background:white;font:14px Arial,sans-serif;border-radius:2px}.field.full{grid-column:1/-1}.field textarea{min-height:95px;resize:vertical}
+    .form-note{grid-column:1/-1;font:12px/1.6 Arial,sans-serif;color:var(--muted);margin:0}.form-actions{grid-column:1/-1;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.contact-box{padding:24px;background:var(--paper);border:1px solid var(--line);text-align:center}.contact-box h3{font-weight:normal;margin:8px 0}.contact-box p{font:14px/1.6 Arial,sans-serif;color:var(--muted);margin:0}
+    footer{background:#241b16;color:#e9ddce;text-align:center;padding:28px 18px;font:12px/1.8 Arial,sans-serif}.footer-brand{font:20px Georgia,serif;letter-spacing:.12em;margin-bottom:8px}
+    @media(max-width:760px){.links{display:none}.cards{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.photo{height:190px}.contact-grid{grid-template-columns:1fr}section{padding:58px 18px}.hero{min-height:520px}form{grid-template-columns:1fr;padding:20px}.field.full,.form-note,.form-actions{grid-column:1}}
+  </style>
+</head>
+<body>
+  <!-- SETUP: Replace the WhatsApp number in the script at the bottom with your father's hotel number.
+       Use country code 91 followed by the 10-digit mobile number, without + or spaces. -->
+  <div class="topbar">KOTLA DHURI MAIN ROAD, PUNJAB · HOTEL · RESTAURANT · CELEBRATIONS</div>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="#home">TARA HAVELI<small>HOSPITALITY & CELEBRATIONS</small></a>
+      <div class="links">
+        <a href="#experiences">EXPLORE</a><a href="#about">ABOUT</a><a href="#booking">ENQUIRE</a><a href="#contact">CONTACT</a>
+      </div>
+      <a class="btn" href="#booking">MAKE AN ENQUIRY</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="eyebrow">A PLACE TO STAY · DINE · CELEBRATE</div>
+        <h1>Make Every<br>Moment Special</h1>
+        <p>Welcome to Tara Haveli. Explore comfortable stays, restaurant experiences and spaces for the celebrations that bring everyone together.</p>
+        <a class="btn" href="#booking">PLAN YOUR VISIT</a>
+      </div>
+    </section>
+
+    <section id="experiences">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">DISCOVER TARA HAVELI</div>
+          <h2>Something for Every Occasion</h2>
+          <p>Whether you're planning a stay, a meal or a get-together, we'd be happy to hear from you.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <!-- Replace this photo placeholder with a real hotel room photo. -->
+            <div class="photo room">Add your room photo here</div>
+            <div class="card-body"><h3>Comfortable Rooms</h3><p>Looking for a relaxing stay? Send us your dates and room requirements. Our team will confirm availability and pricing.</p><a class="btn outline" href="#booking">ENQUIRE ABOUT ROOMS</a></div>
+          </article>
+          <article class="card">
+            <!-- Replace this photo placeholder with a real restaurant / food photo. -->
+            <div class="photo food">Add your restaurant photo here</div>
+            <div class="card-body"><h3>Restaurant</h3><p>Discover our restaurant. Contact the hotel for menu details, timings and table enquiries.</p><a class="btn outline" href="#booking">ASK ABOUT DINING</a></div>
+          </article>
+          <article class="card">
+            <!-- Replace this photo placeholder with a real party hall photo. -->
+            <div class="photo party">Add your party hall photo here</div>
+            <div class="card-body"><h3>Celebrate Together</h3><p>Planning a birthday party or kitty party? Tell us your date, guest count and celebration plans.</p><a class="btn outline" href="#booking">PLAN A CELEBRATION</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-panel">Your Tara Haveli<br>photo goes here</div>
+        <div class="about-copy">
+          <div class="eyebrow" style="color:#a77a3e">WELCOME</div>
+          <h2>Warm Hospitality, Memorable Moments</h2>
+          <p>Tara Haveli brings together hotel accommodation, restaurant services and a venue for special gatherings. We look forward to welcoming you.</p>
+          <p><strong>Location:</strong> Kotla Dhuri Main Road, Punjab</p>
+          <a class="btn" href="#contact">GET IN TOUCH</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">LET'S PLAN IT</div>
+          <h2>Send a Booking Enquiry</h2>
+          <p>Share a few details and your enquiry will open in WhatsApp for you to send to the hotel. A booking is not confirmed until hotel staff confirms it.</p>
+        </div>
+        <form id="enquiryForm">
+          <div class="field"><label for="name">YOUR NAME *</label><input id="name" name="name" required placeholder="Enter your name"></div>
+          <div class="field"><label for="phone">YOUR PHONE NUMBER *</label><input id="phone" name="phone" required inputmode="tel" placeholder="Enter your phone number"></div>
+          <div class="field"><label for="service">WHAT ARE YOU ENQUIRING ABOUT? *</label><select id="service" name="service" required><option value="">Choose one</option><option>Room booking</option><option>Birthday party</option><option>Kitty party</option><option>Restaurant / dining</option><option>Other event</option></select></div>
+          <div class="field"><label for="date">PREFERRED DATE</label><input id="date" name="date" type="date"></div>
+          <div class="field"><label for="guests">NUMBER OF GUESTS / ROOMS</label><input id="guests" name="guests" placeholder="e.g. 20 guests or 2 rooms"></div>
+          <div class="field"><label for="time">PREFERRED TIME (IF RELEVANT)</label><input id="time" name="time" placeholder="e.g. 7:00 PM"></div>
+          <div class="field full"><label for="message">ANY OTHER DETAILS</label><textarea id="message" name="message" placeholder="Tell us what you have in mind..."></textarea></div>
+          <p class="form-note">Please do not enter payment card details or sensitive personal information. The hotel team will contact you to discuss availability and prices.</p>
+          <div class="form-actions"><button class="btn" type="submit">SEND ENQUIRY ON WHATSAPP</button><span class="sans" style="font-size:12px;color:#70665d">No online payment on this demo website.</span></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">WE'D LOVE TO HEAR FROM YOU</div><h2>Contact Tara Haveli</h2><p>For room, restaurant and celebration enquiries, please contact the hotel.</p></div>
+        <div class="contact-grid">
+          <div class="contact-box"><div class="eyebrow">LOCATION</div><h3>Visit Us</h3><p>Kotla Dhuri Main Road<br>Punjab, India</p></div>
+          <div class="contact-box"><div class="eyebrow">PHONE</div><h3>Call the Hotel</h3><p>Hotel phone number to be added</p></div>
+          <div class="contact-box"><div class="eyebrow">WHATSAPP</div><h3>Send an Enquiry</h3><p>WhatsApp number to be added</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="footer-brand">TARA HAVELI</div>Hotel · Restaurant · Celebrations<br>© <span id="year"></span> Tara Haveli. All rights reserved.</footer>
+
+  <script>
+    // IMPORTANT: Your father should replace this with the hotel's WhatsApp number.
+    // Format: 91 followed by the 10-digit mobile number. Example format only: 919876543210
+    const HOTEL_WHATSAPP_NUMBER = "ADD_HOTEL_NUMBER_HERE";
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      if (!/^\d{12}$/.test(HOTEL_WHATSAPP_NUMBER)) {
+        alert("The hotel WhatsApp number has not been set up yet. Please ask the hotel to add its number before publishing.");
+        return;
+      }
+      const data = new FormData(this);
+      const message = [
+        "Hello Tara Haveli! I would like to make an enquiry.",
+        "Name: " + data.get("name"),
+        "My phone: " + data.get("phone"),
+        "Enquiry: " + data.get("service"),
+        "Preferred date: " + (data.get("date") || "Not specified"),
+        "Guests / rooms: " + (data.get("guests") || "Not specified"),
+        "Preferred time: " + (data.get("time") || "Not specified"),
+        "Details: " + (data.get("message") || "None"),
+        "",
+        "Please let me know availability and pricing. I understand this is an enquiry, not a confirmed booking."
+      ].join("\n");
+      window.open("https://wa.me/" + HOTEL_WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message), "_blank");
+    });
+  </script>
+</body>
+</html>
